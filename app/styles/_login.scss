@@ -1,0 +1,55 @@
+@import "_variables";
+@import "compass/css3";
+
+.login {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  background-image: url("/images/bg.jpg");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center; 
+
+  .spacer {
+    margin-bottom: 3%;
+  }
+
+  .box {
+    background-color: white;
+    width: 30%;
+    margin: 0 auto;
+    padding: 70px 80px 80px 70px;
+    border-radius: $border-radius;
+    @include box-shadow(rgba(0, 0, 0, 0.125) 2px 1px 10px); 
+
+    .logo {
+      margin-bottom: 80px;
+    }
+
+    form {
+      width: 100%;
+      .add-on{
+        padding: 10px 7px;
+        @include background(linear-gradient(top, #ffffff, #f6f6f6));
+      }
+      input[type="text"], input[type="password"] {
+        width: 83%;
+        padding: 10px 7px;
+        border-right: none;
+        border-radius: $border-radius;
+        @include background(linear-gradient(top, #ffffff, #f6f6f6));
+      }
+
+      input[type="submit"]{
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: $border-radius;
+        @include background(linear-gradient(top, #0066CB, #005CB9));
+        color: white;
+        @include single-text-shadow;
+      }
+    }
+  }
+}

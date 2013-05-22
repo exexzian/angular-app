@@ -1,0 +1,22 @@
+<div class="row-fluid">
+  <div class="span12">
+    <div class="login">
+      <div class="spacer"></div>
+      <div class="box">
+        <div class="logo"><img src="/images/logo.png"/></div>
+        <div class="alert" data-ng-show="message">{{message}}</div>
+        <form class="simple-form" data-ng-submit="login()">
+          <div class="input-append">
+            <input type="text" ng-model="username" placeholder="Username" required />
+            <span class="add-on"><img src="/images/uname_icon.png"/></span>
+          </div>
+          <div class="input-append">
+            <input type="password" ng-model="password" placeholder="Password" required />
+            <span class="add-on"><img src="/images/password_icon.png"/></span>
+          </div>
+          <input class="btn-blue" type="submit" value="Login">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

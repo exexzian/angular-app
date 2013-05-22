@@ -1,0 +1,65 @@
+@import "_variables";
+@import "compass/css3";
+
+.main {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  background-image: url("/images/bg.jpg");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center; 
+
+  .spacer {
+    margin-bottom: 3%;
+  }
+
+  .box {
+    background-color: white;
+    width: 30%;
+    margin: 0 auto;
+    padding: 30px 80px 30px 70px;
+    border-radius: $border-radius;
+    @include box-shadow(rgba(0, 0, 0, 0.125) 2px 1px 10px); 
+
+    .logo {
+      margin-bottom: 60px;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0px auto;
+    }
+
+    li {
+      position: relative;
+      margin-bottom: 10px;
+      padding: 8px;
+      border-radius: $border-radius;
+      @include background(linear-gradient(top, #F3F3F3, #D3D3D3));
+      @include box-shadow(rgba(70, 70, 70, 0.50) 0px 1px 0px);
+
+      a {
+        position: absolute;
+        top: 15px;
+        left: 27%;
+        color: #666666;
+        font-size: 1.3em;
+        @include text-shadow(rgba(gray, 0.2) 1px 4px 6px, rgba(gray, 0.2) 0 0 0, rgba(gray, 0.2) 1px 4px 6px);
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    li.blue {
+      @extend li;
+      @include background(linear-gradient(top, #0066CB, #005CB9));
+      a{
+        color: white;
+      }
+    }
+
+  }
+}
