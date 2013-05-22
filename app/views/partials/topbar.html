@@ -1,0 +1,25 @@
+<div class="row-fluid">
+  <div class="span12">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="row-fluid">
+          <div class="span2">
+            <a class="brand" href="#/main"><img src="/images/logo_topbar.png"/></a>
+          </div>
+          <div class="span10" style="margin-left: 5px;">
+            <ul class="nav top-bar">
+              <li ng-class="{'active': page=='accounts'}"><a href="#/accounts"><img src="/images/i_accounts_b.png"/>Home</a></li>
+              <li ng-class="{'active': page=='plan'}"><a href="#/plan"><img src="/images/i_plan_b.png"/>Action Plan</a></li>
+              <li ng-class="{'active': page=='calendar'}"><a href="#/calendar"><img src="/images/i_cal_b.png"/>Calendar</a></li>
+              <li ng-class="{'active': page=='performance'}"><a href="#/performance"><img src="/images/i_perf_b.png"/>Performance</a></li>
+              <li ng-class="{'active': page=='library'}"><a href="#/library"><img src="/images/i_library_b.png"/>Library</a></li>
+            </ul>
+            <ul class="nav pull-right">
+              <li><a href="" ng-click="logout()" ng-controller="NavigationCtrl">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+.container-fluid {
+  padding: 0;
+}
+
+.navbar {
+  margin-bottom: 2px;
+  .navbar-inner {
+    border-radius: 0px;
+    border: none;
+    @include background(linear-gradient(top, #007BC1, #0164B5));
+    @include box-shadow(#00467B 0px 1px 0px);
+    a {
+      color: white;
+      text-shadow: none;
+    }
+
+    .pull-right {
+      li {
+        line-height: 30px;
+      }
+      a {
+        color: white;
+        text-shadow: none;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.nav-tabs {
+  margin-left: -2px;
+  a {
+    color: #555555;
+  }
+  li.active {
+    a {
+      background-color: #f4f4f4;
+    }
+    a:hover {
+      background-color: #f4f4f4;
+    }
+  }
+}

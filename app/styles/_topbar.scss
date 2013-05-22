@@ -1,0 +1,22 @@
+.top-bar {
+  li {
+    line-height: 30px;
+    width: 140px;
+    text-align: center;
+    a {
+      color: white !important;
+      text-shadow: none;
+      font-size: 0.95em;
+    }
+  }
+
+  li.active {
+    a {
+      @include background(linear-gradient(top, #00446D, #005EA6));
+    }
+  }
+
+  img {
+    margin-right: 10px;
+  }
+}
