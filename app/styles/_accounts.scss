@@ -5,11 +5,8 @@
     list-style: none;
     margin-left: 0px;
 
-    li {
-    }
-
     li a {
-      color: #555555;
+      color: $app_gray;
       display: block;
       height: 50px;
       border: 1px solid #ccc;
@@ -17,18 +14,54 @@
       padding: 45px 30px 20px 25px;
       text-align: center;
       @include background(linear-gradient(top, #ffffff, #f2f2f2));
-    }
-
-    li a:hover {
-      text-decoration: none;
-      @include background(linear-gradient(top, #f2f2f2, #f9f9f9));
+      &:hover {
+        text-decoration: none;
+        @include background(linear-gradient(top, #f2f2f2, #f9f9f9));
+      }
     }
 
     li.active a {
+      color: $app_blue;
+      border-right: 8px solid #C8142D;
       @include background(linear-gradient(top, #eee, #ddd));
       @include box-shadow(rgba(0, 0, 0, 0.125) 1px 9px 20px inset);
     }
 }
 
-.main-content {
+.head {
+  display: inline;
+  h2 {
+    display: inline;
+    color: $app_blue;
+    font-size: 1.4em;
+  }
 }
+
+.sub-nav {
+  list-style: none;
+  display: inline;
+  margin-top: 10px;
+  li {
+    display: inline;
+    padding: 10px;
+    a {
+      font-size: 0.8em;
+      text-transform: uppercase;
+      color: $app_gray;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  li.active {
+    @extend li;
+    border-bottom: 1px dashed red;
+  }
+}
+
+.main-content {
+  .cust-name, .cust-contact, .cust-info, .prod-info {
+    @include box-div;
+  }
+}
+
