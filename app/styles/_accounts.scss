@@ -8,10 +8,10 @@
     li a {
       color: $app_gray;
       display: block;
-      height: 50px;
+      height: 30px;
       border: 1px solid #ccc;
       margin-bottom: 2px;
-      padding: 45px 30px 20px 25px;
+      padding: 35px 30px 20px 30px;
       text-align: center;
       @include background(linear-gradient(top, #ffffff, #f2f2f2));
       &:hover {
@@ -60,8 +60,12 @@
 }
 
 .main-content {
-  .cust-name, .cust-contact, .cust-info, .prod-info, .cust-details {
+  .cust-name, .cust-contact, .cust-info, .prod-info, .cust-details, .raw-mat {
     @include box-div;
+  }
+  .raw-mat-sourcing {
+    @include box-div;
+    height: 350px;
   }
 }
 
