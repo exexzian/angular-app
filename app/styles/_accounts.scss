@@ -10,7 +10,6 @@
       display: block;
       height: 30px;
       border: 1px solid #ccc;
-      margin-bottom: 2px;
       padding: 35px 30px 20px 30px;
       text-align: center;
       @include background(linear-gradient(top, #ffffff, #f2f2f2));
@@ -55,7 +54,7 @@
   }
   li.active {
     @extend li;
-    border-bottom: 1px dashed red;
+    border-bottom: 2px dotted red;
   }
 }
 
@@ -75,6 +74,14 @@
         color: $app_lgray;
       }
     }
+  }
+  .sales {
+    @include box-div;
+    height: 230px;
+  }
+  .revenue {
+    @include box-div;
+    height: 230px;
   }
 }
 

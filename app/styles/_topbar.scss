@@ -1,13 +1,17 @@
 .top-bar {
+  width: 87%;
+  display: inline;
   li {
     line-height: 30px;
-    width: 140px;
+    width: 19%;
     text-align: center;
     a {
       color: white !important;
       text-shadow: none !important;
       font-size: 0.95em;
     }
+    border-width: 0px 2px 0px 0px;
+    border-image: url("/images/divider_topbar.png") 5 5 5;
   }
 
   li.active {
@@ -18,5 +22,16 @@
 
   img {
     margin-right: 10px;
+  }
+}
+
+.ten-wide {
+  width: 5%;
+  float: left !important;
+  li {
+    a {
+      text-shadow: none !important;
+      text-decoration: none !important;
+    }
   }
 }
