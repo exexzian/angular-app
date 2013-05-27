@@ -13,7 +13,7 @@
   </head>
   <body data-ng-app="webApp">
     <!-- Add your site or application content here -->
-    <div class="container-fluid" data-ng-view></div>
+    <div class="container-fluid" data-my-animated-view></div>
 
     <script src="components/angular/angular.js"></script>
     <script src="components/angular-resource/angular-resource.js"></script>
@@ -22,6 +22,8 @@
 
     <!-- build:js scripts/scripts.js -->
     <script src="scripts/app.js"></script>
+    <script src="scripts/directives/my_animate.js"></script>
+    <script src="scripts/directives/my_current_time.js"></script>
     <script src="scripts/services/storage.js"></script>
     <script src="scripts/controllers/login.js"></script>
     <script src="scripts/controllers/navigation.js"></script>

@@ -4,12 +4,17 @@ $app_gray: #666666;
 $app_blue: #106AC8;
 $app_lgray: #999999;
 
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
 @mixin box-div {
   padding: 15px;
   background-color: #FFFFFF;
   margin-top: 10px;
   color: $app_gray;
-  height: 150px;
+  height: 135px;
   box-shadow: 0px 2px 5px lighten($app_gray, 40%);
 
   h4 {

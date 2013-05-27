@@ -1,14 +1,16 @@
-<div ng-include src="'views/partials/topbar.html'"></div>
-
-<div class="row-fluid">
-  <div ng-include src="'views/partials/sidebar.html'"></div>
-  <div class="span10" style="margin-left: 20px; padding-right: 10px;">
-    <div class="row-fluid">
-      <div ng-include src="'views/partials/accounts_navbar.html'"></div>
-      <div ng-include src="'views/partials/comp_profile.html'" ng-show="subpage=='Company Profile'"></div>
-      <div ng-include src="'views/partials/raw_material.html'" ng-show="subpage=='Raw Material Needs'"></div>
-      <div ng-include src="'views/partials/decision_making.html'" ng-show="subpage=='Decision Making'"></div>
-      <div ng-include src="'views/partials/buying_behavior.html'" ng-show="subpage=='Buying Behavior'"></div>
+<div class="page">
+  <!--<div my-current-time></div>-->
+  <div ng-include src="'views/partials/topbar.html'"></div>
+  <div class="row-fluid">
+    <div ng-include src="'views/partials/accounts/sidebar.html'"></div>
+    <div class="span10" style="margin-left: 20px; padding-right: 10px;">
+      <div class="row-fluid">
+        <div ng-include src="'views/partials/accounts/accounts_navbar.html'"></div>
+        <div ng-include src="'views/partials/accounts/comp_profile.html'" ng-show="subpage=='Company Profile'"></div>
+        <div ng-include src="'views/partials/accounts/raw_material.html'" ng-show="subpage=='Raw Material Needs'"></div>
+        <div ng-include src="'views/partials/accounts/decision_making.html'" ng-show="subpage=='Decision Making'"></div>
+        <div ng-include src="'views/partials/accounts/buying_behavior.html'" ng-show="subpage=='Buying Behavior'"></div>
+      </div>
     </div>
   </div>
 </div>

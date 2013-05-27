@@ -60,7 +60,7 @@
 }
 
 .main-content {
-  .cust-name, .cust-contact, .cust-info, .prod-info {
+  .cust-name, .cust-contact, .cust-info, .prod-info, .cust-details {
     @include box-div;
   }
 }
