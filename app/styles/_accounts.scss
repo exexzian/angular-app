@@ -60,12 +60,21 @@
 }
 
 .main-content {
-  .cust-name, .cust-contact, .cust-info, .prod-info, .cust-details, .raw-mat {
+  .cust-name, .cust-contact, .cust-info, .prod-info, .cust-details, .raw-mat, .buy-factors {
     @include box-div;
   }
   .raw-mat-sourcing {
     @include box-div;
     height: 350px;
+  }
+  .dec-mak {
+    @include box-div;
+    height: 200px;
+    .text {
+      .p {
+        color: $app_lgray;
+      }
+    }
   }
 }
 
