@@ -36,13 +36,16 @@
       {"suppliers": "jhkhlkhlk", "rawMaterial": "khkjhkjhk", "grade": "dadasd", "volume": "adsdas", "typeOfDeal": "dasdas", "contractDuration": "dsadasda", "shippingFrequency": "asdasdas", "shippingCost": "dassdas", "pricing": "asdsdas", "paymentTerms": "dasasd"},
       {"suppliers": "jhkhlkhlk", "rawMaterial": "khkjhkjhk", "grade": "dadasd", "volume": "adsdas", "typeOfDeal": "dasdas", "contractDuration": "dsadasda", "shippingFrequency": "asdasdas", "shippingCost": "dassdas", "pricing": "asdsdas", "paymentTerms": "dasasd"}
     ],
-    "decisionMaking": 
-      {"process": "dfqfamskdmasdmdasdawdwdwdwdDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"}
-    ,
+    "decisionMaking": {"process": "dfqfamskdmasdmdasdawdwdwdwdDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"},
     "keyBuyingFactors": [
       {"factor": "dasasdas", "ranking": "dasdasdasd", "details": "dasdasdasd scsds"},
       {"factor": "dasasdas", "ranking": "dasdasdasd", "details": "dasdasdasd scsds"}
-    ]
+    ],
+    "buyingBehavior": {
+      "labels": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+      "sales": [[65, 59, 90, 81, 56, 55, 40, 28, 48, 40, 19, 96], [28, 48, 40, 19, 96, 27, 100, 65, 59, 90, 81, 56]],
+      "revenue": [[65, 59, 90, 81, 56, 55, 40, 28, 48, 40, 19, 96], [28, 48, 40, 19, 96, 27, 100, 65, 59, 90, 81, 56]]
+    }
   },
   {
     "accountId": 2,
@@ -80,12 +83,15 @@
       {"suppliers": "jhkhlkhlk", "rawMaterial": "khkjhkjhk", "grade": "dadasd", "volume": "adsdas", "typeOfDeal": "dasdas", "contractDuration": "dsadasda", "shippingFrequency": "asdasdas", "shippingCost": "dassdas", "pricing": "asdsdas", "paymentTerms": "dasasd"},
       {"suppliers": "jhkhlkhlk", "rawMaterial": "khkjhkjhk", "grade": "dadasd", "volume": "adsdas", "typeOfDeal": "dasdas", "contractDuration": "dsadasda", "shippingFrequency": "asdasdas", "shippingCost": "dassdas", "pricing": "asdsdas", "paymentTerms": "dasasd"}
     ],
-    "decisionMaking": [
-      {"process": "dfqfamskdmasdmdasdawdwdwdwdDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"}
-    ],
+    "decisionMaking": {"process": "dfqfamskdmasdmdasdawdwdwdwdDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"},
     "keyBuyingFactors": [
-      {"factors": "dasasdas", "ranking": "dasdasdasd", "details": "dasdasdasd scsds"},
-      {"factors": "dasasdas", "ranking": "dasdasdasd", "details": "dasdasdasd scsds"}
-    ]
+      {"factor": "dasasdas", "ranking": "dasdasdasd", "details": "dasdasdasd scsds"},
+      {"factor": "dasasdas", "ranking": "dasdasdasd", "details": "dasdasdasd scsds"}
+    ],
+    "buyingBehavior": {
+      "labels": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+      "sales": [[65, 59, 90, 81, 56, 55, 40, 28, 48, 40, 19, 96], [28, 48, 40, 19, 96, 27, 100, 65, 59, 90, 81, 56]],
+      "revenue": [[65, 59, 90, 81, 56, 55, 40, 28, 48, 40, 19, 96], [28, 48, 40, 19, 96, 27, 100, 65, 59, 90, 81, 56]]
+    }
   }
 ]
