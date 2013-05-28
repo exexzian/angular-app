@@ -1,6 +1,6 @@
 'use strict'
 
-angular.module("webApp", ["webApp.service"]).config ($routeProvider) ->
+angular.module("webApp", ["webApp.service", "webApp.webService"]).config ($routeProvider) ->
   $routeProvider
   .when("/", {templateUrl: "views/login.html", controller: "LoginCtrl"})
   .when("/main", {templateUrl: "views/main.html", controller: "NavigationCtrl"})

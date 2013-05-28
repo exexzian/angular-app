@@ -3,7 +3,7 @@
     <div class="row-fluid">
       <div class="span3">
         <div class="cust-name">
-          <h3>Supratma Aneka Industri</h3>
+          <h3>{{accountDetails.accountName}}</h3>
         </div>
       </div>
       <div class="span9">
@@ -19,17 +19,11 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Raw Material</td>
-                <td>Grade</td>
-                <td>Specific Grade</td>
-                <td>Total Volume</td>
-              </tr>
-              <tr>
-                <td>Raw Material</td>
-                <td>Grade</td>
-                <td>Specific Grade</td>
-                <td>Total Volume</td>
+              <tr ng-repeat="need in accountDetails.rawMaterialNeeds">
+                <td>{{need.rawMaterial}}</td>
+                <td>{{need.grade}}</td>
+                <td>{{need.specificGrade}}</td>
+                <td>{{need.totalVolume}}</td>
               </tr>
             </tbody>
           </table>
@@ -56,29 +50,17 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Suppliers</td>
-                <td>Raw Material</td>
-                <td>Grade</td>
-                <td>Volume (tpm)</td>
-                <td>Type of Deal</td>
-                <td>Contract Duration</td>
-                <td>Shipping Frequency</td>
-                <td>Shipping Cost</td>
-                <td>Pricing</td>
-                <td>Payment Terms</td>
-              </tr>
-              <tr>
-                <td>Suppliers</td>
-                <td>Raw Material</td>
-                <td>Grade</td>
-                <td>Volume (tpm)</td>
-                <td>Type of Deal</td>
-                <td>Contract Duration</td>
-                <td>Shipping Frequency</td>
-                <td>Shipping Cost</td>
-                <td>Pricing</td>
-                <td>Payment Terms</td>
+              <tr ng-repeat="sourcing in accountDetails.rawMaterialSourcing">
+                <td>{{sourcing.suppliers}}</td>
+                <td>{{sourcing.rawMaterial}}</td>
+                <td>{{sourcing.grade}}</td>
+                <td>{{sourcing.volume}}</td>
+                <td>{{sourcing.typeOfDeal}}</td>
+                <td>{{sourcing.contractDuration}}</td>
+                <td>{{sourcing.shippingFrequency}}</td>
+                <td>{{sourcing.shippingCost}}</td>
+                <td>{{sourcing.pricing}}</td>
+                <td>{{sourcing.paymentTerms}}</td>
               </tr>
             </tbody>
           </table>

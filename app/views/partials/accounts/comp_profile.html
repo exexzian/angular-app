@@ -3,7 +3,7 @@
     <div class="row-fluid">
       <div class="span3">
         <div class="cust-name">
-          <h3>Supratma Aneka Industri</h3>
+          <h3>{{accountDetails.accountName}}</h3>
         </div>
       </div>
       <div class="span9">
@@ -18,15 +18,10 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Shlkasl</td>
-                <td>121 csds</td>
-                <td>12</td>
-              </tr>
-              <tr>
-                <td>Adakjsdbc</td>
-                <td>123 lhdcas</td>
-                <td>112356</td>
+              <tr ng-repeat="info in accountDetails.customerInfo">
+                <td>{{info.customerName}}</td>
+                <td>{{info.customerAddress}}</td>
+                <td>{{info.warehouseCapacity}}</td>
               </tr>
             </tbody>
           </table>
@@ -48,19 +43,12 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Name1</td>
-                <td>Position1</td>
-                <td>Email1</td>
-                <td>Phone1</td>
-                <td>Key Decision Maker1</td>
-              </tr>
-              <tr>
-                <td>Name2</td>
-                <td>Position2</td>
-                <td>Email2</td>
-                <td>Phone2</td>
-                <td>Key Decision Maker2</td>
+              <tr ng-repeat="info in accountDetails.customerContactInfo">
+                <td>{{info.name}}</td>
+                <td>{{info.position}}</td>
+                <td>{{info.email}}</td>
+                <td>{{info.phone}}</td>
+                <td>{{info.keyDecisionMaker}}</td>
               </tr>
             </tbody>
           </table>
@@ -84,23 +72,14 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>End Product</td>
-                <td>Volume (TPM)</td>
-                <td>Raw Material</td>
-                <td>Grade</td>
-                <td>Specific Grade</td>
-                <td>Manufacturing Location</td>
-                <td>Machine Specification</td>
-              </tr>
-              <tr>
-                <td>End Product</td>
-                <td>Volume (TPM)</td>
-                <td>Raw Material</td>
-                <td>Grade</td>
-                <td>Specific Grade</td>
-                <td>Manufacturing Location</td>
-                <td>Machine Specification</td>
+              <tr ng-repeat="info in accountDetails.endProductInfo">
+                <td>{{info.endProduct}}</td>
+                <td>{{info.volume}}</td>
+                <td>{{info.rawMaterial}}</td>
+                <td>{{info.grade}}</td>
+                <td>{{info.specificGrade}}</td>
+                <td>{{info.manufacturingLocation}}</td>
+                <td>{{info.machineSpecification}}</td>
               </tr>
             </tbody>
           </table>
@@ -121,17 +100,11 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Industry Perspective</td>
-                <td>Expansion Plans</td>
-                <td>Specific Situations / Needs</td>
-                <td>Other</td>
-              </tr>
-              <tr>
-                <td>Industry Perspective</td>
-                <td>Expansion Plans</td>
-                <td>Specific Situations / Needs</td>
-                <td>Other</td>
+              <tr ng-repeat="details in accountDetails.customerDetails">
+                <td>{{details.industryPerspective}}</td>
+                <td>{{details.expansionPlans}}</td>
+                <td>{{details.specificNeeds}}</td>
+                <td>{{details.other}}</td>
               </tr>
             </tbody>
           </table>

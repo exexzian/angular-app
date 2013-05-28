@@ -11,6 +11,7 @@ class LoginCtrl
 
     if username is "Rocky" and password is "123456" #make a HTTP call here
       @storageService.store("token", "21312lk3h21olkh3o2i1h4412122")
+      @storageService.store("username", "Rocky")
       @$location.url("main")
     else
       @$scope.message = "Incorrect username / password"

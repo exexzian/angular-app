@@ -2,13 +2,24 @@
 
 class AccountsCtrl
 
-  constructor: (@$scope, @$location, @$routeParams, @storageService, @$http) ->
+  constructor: (@$scope, @$location, @$routeParams, @$http, @storageService, @webService) ->
     @$location.url("login") unless @storageService.get("token")
     @$scope.page = "accounts"
-    @$http.get('http://localhost:9000/jsons/accounts.json').success (data) =>
-      @$scope.accounts  = data.accounts
-      @$scope.accountId = if @$routeParams.accountId then @$routeParams.accountId else @$scope.accounts[0].id
-      @$scope.subpage   = if @$routeParams.subpage then @$routeParams.subpage else "Company Profile"
+    
+    promise = @webService.getAccounts(@storageService.get("username"))
+    @setScope promise
 
-AccountsCtrl.$inject = ["$scope", "$location", "$routeParams", "storageService", "$http"]
+  setScope: (promise) ->
+    promise.then (success) =>
+      @$scope.accounts  = success.data
+      @$scope.accountId = if @$routeParams.accountId then @$routeParams.accountId else @$scope.accounts[0].accountId
+      @$scope.subpage   = if @$routeParams.subpage then @$routeParams.subpage else "Company Profile"
+      @$scope.accountDetails = @getDataForAccount(@$scope.accounts, @$scope.accountId)
+    , (error) ->
+      console.log(error)
+
+  getDataForAccount: (data, accountid) ->
+    _.find(data, (obj) -> obj.accountId.toString() is accountid.toString())
+
+AccountsCtrl.$inject = ["$scope", "$location", "$routeParams", "$http", "storageService", "webService"]
 angular.module("webApp").controller "AccountsCtrl", AccountsCtrl

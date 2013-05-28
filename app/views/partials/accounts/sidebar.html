@@ -1,7 +1,7 @@
 <div class="span2">
   <ul class="sidebar">
-    <li ng-repeat="account in accounts" ng-class="{'active': accountId==account.id}">
-      <a href="#/accounts/{{account.id}}/Company Profile">{{account.name}}</a>
+    <li ng-repeat="account in accounts" ng-class="{'active': accountId==account.accountId}">
+      <a href="#/accounts/{{account.accountId}}/Company Profile">{{account.accountName}}</a>
     </li>
   </ul>
 </div>
