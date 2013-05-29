@@ -16,6 +16,10 @@ class MyChart
           fillColor: "rgba(211,28,39,0.5)"
           strokeColor: "rgba(211,28,39,1)"
           data: scope.accountDetails.buyingBehavior.sales[1]
+        ,
+          fillColor: "rgba(102,200,61,0.5)"
+          strokeColor: "rgba(102,200,61,1)"
+          data: scope.accountDetails.buyingBehavior.sales[1]
         ]
 
       ctx = $("." + attrs.class).get(0).getContext("2d")
