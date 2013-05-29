@@ -17,9 +17,11 @@ class MyChart
           strokeColor: "rgba(211,28,39,1)"
           data: scope.accountDetails.buyingBehavior.sales[1]
         ]
+
       ctx = $("." + attrs.class).get(0).getContext("2d")
       ctx.canvas.width = 800 if attrs.class is "rev-chart"
-      chart = new Chart(ctx).Bar(data, {scaleShowGridLines: false})     
+      chart = new Chart(ctx).Bar(data, {scaleShowGridLines: false}) if attrs.class is "sales-chart" 
+      chart = new Chart(ctx).Bar(data, {scaleShowGridLines: false}) if attrs.class is "rev-chart" 
 
       
 angular.module("webApp").directive "myChart", MyChart.options
